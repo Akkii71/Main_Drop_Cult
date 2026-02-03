@@ -14,15 +14,15 @@ const DiscoverPage = () => {
             {showQuiz && <StyleDNAQuiz onClose={() => setShowQuiz(false)} />}
 
             {/* Top Navigation Bar (Floating Pill) */}
-            <div className="fixed top-24 left-1/2 -translate-x-1/2 z-40 hidden md:flex items-center gap-2 bg-black/80 backdrop-blur-md border border-white/20 rounded-full px-2 py-2">
-                <Link to="/" className="px-6 py-2 bg-off-black rounded-full font-mono text-xs uppercase hover:bg-white hover:text-black transition-colors border border-white/10">Home</Link>
-                <Link to="/shop" className="px-6 py-2 bg-acid-yellow text-black rounded-full font-mono text-xs uppercase font-bold hover:bg-white transition-colors">Collections ▼</Link>
-                <Link to="/about" className="px-6 py-2 bg-off-black rounded-full font-mono text-xs uppercase hover:bg-white hover:text-black transition-colors border border-white/10">About</Link>
-                <div className="flex items-center px-4 py-2 bg-off-black rounded-full border border-white/10 text-gray-400">
+            <div className="fixed top-24 left-1/2 -translate-x-1/2 z-40 flex items-center gap-2 bg-black/80 backdrop-blur-md border border-white/20 rounded-full px-2 py-2 max-w-[95vw] overflow-x-auto no-scrollbar whitespace-nowrap">
+                <Link to="/" className="px-6 py-2 bg-off-black rounded-full font-mono text-xs uppercase hover:bg-white hover:text-black transition-colors border border-white/10 shrink-0">Home</Link>
+                <Link to="/shop" className="px-6 py-2 bg-acid-yellow text-black rounded-full font-mono text-xs uppercase font-bold hover:bg-white transition-colors shrink-0">Collections ▼</Link>
+                <Link to="/about" className="px-6 py-2 bg-off-black rounded-full font-mono text-xs uppercase hover:bg-white hover:text-black transition-colors border border-white/10 shrink-0">About</Link>
+                <div className="flex items-center px-4 py-2 bg-off-black rounded-full border border-white/10 text-gray-400 shrink-0">
                     <Search className="w-3 h-3 mr-2" />
                     <span className="font-mono text-xs">Search</span>
                 </div>
-                <div className="px-6 py-2 bg-off-black rounded-full font-mono text-xs uppercase border border-white/10 flex items-center gap-2">
+                <div className="px-6 py-2 bg-off-black rounded-full font-mono text-xs uppercase border border-white/10 flex items-center gap-2 shrink-0">
                     <MapPin className="w-3 h-3" />
                     <span>Metaverse</span>
                 </div>
