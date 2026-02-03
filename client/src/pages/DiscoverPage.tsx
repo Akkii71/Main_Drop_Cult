@@ -4,6 +4,7 @@ import { useState } from 'react';
 import StyleDNAQuiz from '../components/StyleDNAQuiz';
 import Marquee from '../components/Marquee';
 import { ArrowRight, ShoppingBag, MapPin, Search } from 'lucide-react';
+import heroIllustration from '../assets/hero-illustration.jpg';
 
 const DiscoverPage = () => {
     const [showQuiz, setShowQuiz] = useState(false);
@@ -37,7 +38,7 @@ const DiscoverPage = () => {
                         {/* Background Image */}
                         <div className="absolute inset-0 bg-[#0088CC]"> {/* Fallback Blue */}
                             <img
-                                src="/src/assets/hero-illustration.jpg"
+                                src={heroIllustration}
                                 className="w-full h-full object-cover opacity-100 group-hover:scale-105 transition-transform duration-700"
                                 alt="Merry Christmas"
                             />
