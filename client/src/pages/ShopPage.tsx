@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 
 const ShopPage = () => {
-    const [keyword, setKeyword] = useState('');
+    const [keyword] = useState('');
     const [vibe, setVibe] = useState('');
 
     // For demo purposes, we will use hardcoded vibes

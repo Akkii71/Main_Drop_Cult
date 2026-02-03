@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import type { ReactNode } from 'react';
 
 const Message = ({ variant = 'info', children }: { variant?: 'info' | 'danger' | 'success' | 'warning', children: ReactNode }) => {
     const colors = {

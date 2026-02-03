@@ -6,7 +6,7 @@ import { setCredentials } from '../store/authSlice';
 import { useGoogleLogin } from '@react-oauth/google';
 import { motion } from 'framer-motion';
 import { Mail, Lock, Loader2, ArrowRight } from 'lucide-react';
-import axios from 'axios';
+// import axios from 'axios';
 
 const Login = () => {
     const [email, setEmail] = useState('');

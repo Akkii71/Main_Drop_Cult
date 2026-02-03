@@ -17,7 +17,7 @@ const Header = () => {
 
     const logoutHandler = async () => {
         try {
-            await logoutApi().unwrap();
+            await logoutApi(undefined).unwrap();
             dispatch(logout());
         } catch (err) {
             console.error(err);

@@ -1,5 +1,5 @@
 import { apiSlice } from './apiSlice';
-const USERS_URL = '/users'; // Prefix is set in proxy or baseQuery
+// const USERS_URL = '/users'; // Prefix is set in proxy or baseQuery
 
 export const usersApiSlice = apiSlice.injectEndpoints({
     endpoints: (builder) => ({

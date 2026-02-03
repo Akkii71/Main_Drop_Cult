@@ -1,7 +1,6 @@
 import { useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import type { RootState } from '../store/store';
 import { savePaymentMethod } from '../store/cartSlice';
 
 const PaymentPage = () => {
@@ -9,8 +8,7 @@ const PaymentPage = () => {
 
     const dispatch = useDispatch();
     const navigate = useNavigate();
-    const cart = useSelector((state: RootState) => state.cart);
-    // const { shippingAddress } = cart;
+    // const cart = useSelector((state: RootState) => state.cart);
 
     // if (!shippingAddress.address) {
     //     navigate('/shipping');
