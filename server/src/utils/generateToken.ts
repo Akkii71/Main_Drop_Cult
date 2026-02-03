@@ -1,0 +1,24 @@
+import jwt from 'jsonwebtoken';
+import { Response } from 'express';
+
+const generateToken = (res: Response, userId: unknown) => {
+    const token = jwt.sign({ userId }, process.env.JWT_SECRET as string, {
+        expiresIn: '30d', // Access Token
+    });
+
+    const refreshToken = jwt.sign({ userId }, process.env.JWT_REFRESH_SECRET as string, {
+        expiresIn: '30d', // Refresh Token
+    });
+
+    // Set Refresh Token as HTTP-Only cookie
+    res.cookie('jwt', refreshToken, {
+        httpOnly: true,
+        secure: process.env.NODE_ENV !== 'development', // Use secure cookies in production
+        sameSite: 'strict', // Prevent CSRF attacks
+        maxAge: 30 * 24 * 60 * 60 * 1000, // 30 days
+    });
+
+    return token;
+};
+
+export default generateToken;
