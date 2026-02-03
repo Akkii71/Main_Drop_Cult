@@ -34,9 +34,10 @@ const DiscoverPage = () => {
                     {/* Main Hero Card (Large Left) */}
                     <div className="md:col-span-5 relative overflow-hidden rounded-[2rem] group">
                         {/* Background Image */}
+                        {/* Background Image */}
                         <div className="absolute inset-0 bg-[#0088CC]"> {/* Fallback Blue */}
                             <img
-                                src="/src/assets/hero-christmas.jpg"
+                                src="/src/assets/hero-illustration.jpg"
                                 className="w-full h-full object-cover opacity-100 group-hover:scale-105 transition-transform duration-700"
                                 alt="Merry Christmas"
                             />
@@ -45,15 +46,7 @@ const DiscoverPage = () => {
                         {/* Content Overlay */}
                         <div className="relative z-10 h-full p-8 flex flex-col justify-between">
                             <div className="w-full">
-                                {/* Outlined Text Effect */}
-                                <h1 className="text-5xl md:text-6xl font-display font-black leading-none tracking-tighter uppercase relative">
-                                    <span className="absolute inset-0 text-transparent" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.5)' }}>Merry</span>
-                                    <span className="relative text-transparent" style={{ WebkitTextStroke: '2px white' }}>Merry</span>
-                                </h1>
-                                <h1 className="text-5xl md:text-6xl font-display font-black leading-none tracking-tighter uppercase relative mt-[-10px]">
-                                    <span className="absolute inset-0 text-transparent" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.5)' }}>Christmas</span>
-                                    <span className="relative text-transparent" style={{ WebkitTextStroke: '2px white' }}>Christmas</span>
-                                </h1>
+                                {/* Text Removed to show illustration */}
                             </div>
 
                             <div className="mt-auto">
