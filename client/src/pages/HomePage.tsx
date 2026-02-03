@@ -2,6 +2,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { ArrowRight } from 'lucide-react';
+import heroIllustration from '../assets/hero-illustration.jpg';
 
 const HomePage = () => {
     const { userInfo } = useSelector((state: any) => state.auth);
@@ -18,9 +19,9 @@ const HomePage = () => {
             {/* Background Image */}
             <div className="absolute inset-0 bg-[#0088CC]">
                 <img
-                    src="/src/assets/hero-christmas.jpg"
+                    src={heroIllustration}
                     className="w-full h-full object-cover opacity-100"
-                    alt="Merry Christmas"
+                    alt="Hero Illustration"
                 />
             </div>
 
@@ -45,14 +46,7 @@ const HomePage = () => {
 
                 {/* Main Text Content */}
                 <div className="mb-12">
-                    <h1 className="text-6xl md:text-9xl font-display font-black leading-none tracking-tighter uppercase relative">
-                        <span className="absolute inset-0 text-transparent" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.5)' }}>Merry</span>
-                        <span className="relative text-transparent" style={{ WebkitTextStroke: '2px white' }}>Merry</span>
-                    </h1>
-                    <h1 className="text-6xl md:text-9xl font-display font-black leading-none tracking-tighter uppercase relative mt-[-10px] md:mt-[-20px]">
-                        <span className="absolute inset-0 text-transparent" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.5)' }}>Christmas</span>
-                        <span className="relative text-transparent" style={{ WebkitTextStroke: '2px white' }}>Christmas</span>
-                    </h1>
+                    {/* Text removed to show illustration */}
 
                     <div className="mt-8">
                         <Link to="/shop" className="inline-flex items-center gap-3 px-8 py-4 bg-neon-purple text-white rounded-full font-bold uppercase tracking-wider text-sm md:text-base hover:bg-white hover:text-black transition-all transform hover:scale-105">
